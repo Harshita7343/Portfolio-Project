@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal portfolio Website-Easy Tutorials</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/73a46d4645.js" crossorigin="anonymous"></script>
+</head>
+<body>
+<div id="header">
+    <div class="container">
+        <nav>
+            <img src="image/jj.jpg" class="logo">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">portfolio</a></li>
+                <li><a href="#">contact</a></li>
+
+            </ul>
+        </nav>
+        <div class="header-text">
+            <p> Web Designer</p>
+            <h1> Hi,I'm <span>Harshita</span><br> Agarwal From Jaipur</h1>
+        </div>
+    </div>
+</div>  
+<!----------about--------->
+
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+           <img src="image/hh.jfif">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About Me</h1>
+                <p>
+                    As a MCA student at jECRC college.I am eagerly looking for opportunities to launch my career in the dynamic field of technology With a strong
+                     foundation in computer science principles and a passion for learning.I strive to use my acad4mic knowledge and skills to effectively contribute
+                     to industry 
+                </p>
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                   <!--- <p class="tab-links" onclick="opentab('experience')">Experience</p>-->
+                    <p class="tab-links" onclick="opentab('education')">Education</p>
+                </div>
+                <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                        <li> <span>Graphic Designer</span><br> Photoshop</li>
+                        <li> <span>Cloud Computing</span><br> Amazon</li>
+                        <li> <span>Java</span><br> Java Devloper </li>
+                    </ul>
+                </div>
+              <!---  <div class="tab-contents " id="experience">
+                    <ul>
+                        <li> <span>Graphic Designer</span><br> Photoshop</li>
+                        <li> <span>Cloud Computing</span><br> Amazon</li>
+                        <li> <span>Java</span><br> Java Devloper </li>
+                    </ul>
+                </div>-->
+                <div class="tab-contents" id="education">
+                    <ul>
+                        <li> <span>2023-2025</span><br> MCA From Jaipur</li>
+                        <li> <span>2020-2023</span><br> BCA From Jaipur</li>
+                        
+                    </ul>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+</div>
+<!----------------Services--------------------->
+ <div id="services">
+     <div class="container">
+        <h1 class="sub-title">My Services</h1>
+     <div class="services-list">
+        <div>
+            <i class="fa-brands fa-java"></i>
+            <h2>JAVA Devlopment</h2>
+            <p>consist of requirement analysis,architecture design,prototype development,migration ,testing & deployment with maintenance & support</p>
+            <a href="#">Learn more</a>
+        </div>
+        <div>
+            <i class="fa-solid fa-pen-nib"></i>
+            <h2>Graphic Designer</h2>
+            <p>you should have a website and engage in social media and email marketing.Place Your portfolio on your website as well as design portfolio sites such as Behance and COroflot.</p>
+            <a href="#">Learn more</a>
+        </div>
+        <div>
+            <i class="fa-solid fa-cloud"></i>
+            <h2>Cloud Computing</h2>
+            <P> How to balance growth,risk,and costs while creating opportunities for growth,it enables you to make data available anywhere you are,anytime you need it.</p>
+            <a href="#">Learn more</a>
+        </div>
+
+
+     </div>
+     </div>
+ </div>
+
+
+ <!--------------------Portfolio------------>
+ <div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title"> My Work</h1>
+        <div class="Work-list">
+            <div class="work">
+                <img src="image/proj_4.jpg">
+
+            </div>
+            <div class="work">
+                <img src="image/proj_4.jpg">
+
+            </div>
+            <div class="work">
+                <img src="image/proj_4.jpg">
+
+            </div>
+
+
+
+
+        </div>
+        
+    </div>
+ </div>
+ <!------------------Contact-------------->
+ <div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p>harshitaagarwal584@gmail.com</p>
+                <p>868747666</p>
+                <div class="social-icons">
+                    <a href=""><i class="fab fa-facebook"></i></a>
+                    <a href=""><i class="fab fa-twitter-square"></i></a>
+                    <a href=""><i class="fab fa-instagram"></i></a>
+                    <a href=""><i class="fab fa-linkedin"></i></a>
+                </div>
+            </div>
+            <div class="contact-right"></div>
+            <form>
+                <input type="text" name="Name" placeholder="Your Name" required>
+                <input type="email" name="email"placeholder="Your Email" required>
+                <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+    </div>
+ </div>
+<script>
+     var tablinks=document.getElementsByClassName("tab-links");
+     var tabcontents=document.getElementsByClassName("tab-contents");
+
+     function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+     }
+</script>
+</body>
+</html>
